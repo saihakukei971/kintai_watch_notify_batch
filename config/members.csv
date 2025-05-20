@@ -1,0 +1,11 @@
+id,name,department,email
+1001,山田太郎,営業部,yamada@example.com
+1002,鈴木花子,総務部,suzuki@example.com
+1003,佐藤一郎,開発部,sato@example.com
+1004,田中美子,営業部,tanaka@example.com
+1005,小島知将,開発部,kojima@example.com
+1006,高橋洋子,総務部,takahashi@example.com
+1007,伊藤隆,マーケティング部,ito@example.com
+1008,渡辺雅人,開発部,watanabe@example.com
+1009,松本さくら,人事部,matsumoto@example.com
+1010,木村健太,経理部,kimura@example.com 

@@ -1,0 +1,45 @@
+# 勤怠表自動転記ツール設定
+
+[default]
+# 基本設定
+employee_name = "小島知将"
+template_path = "templates/勤怠表雛形_2025年版.xlsx"
+input_dir = "input"
+output_dir = "output"
+log_dir = "logs"
+
+# CSV設定
+csv_encoding = "utf-8"
+date_format = "%Y-%m-%d"
+
+# 監視設定
+watch_interval = 5  # 秒
+watch_patterns = ["*.csv"]
+
+# 締切設定
+deadline_day = 25  # 毎月の締切日
+# deadline = "2025-05-25"
+remind_days_before = 5
+submitters_csv = "config/members.csv"
+
+# kintone設定 (.envより優先度低)
+# kintone_domain = ""
+# kintone_api_token = ""
+
+# 通知設定 (.envより優先度低)
+# slack_webhook_url = ""
+
+# 処理環境設定
+debug = false
+max_workers = 4
+
+# 開発環境設定
+[development]
+debug = true
+watch_interval = 1
+
+# 本番環境設定
+[production]
+debug = false
+watch_interval = 5
+max_workers = 2

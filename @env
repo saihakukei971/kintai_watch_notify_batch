@@ -1,0 +1,24 @@
+# 勤怠表自動転記ツール環境設定
+# ※ 機密情報を含むため、Gitではこのファイルを管理しないでください
+
+# kintone連携設定
+KINTONE_DOMAIN=your-subdomain.cybozu.com
+KINTONE_API_TOKEN=your-api-token
+
+# Slack通知設定
+SLACK_WEBHOOK_URL=https://hooks.slack.com/services/XXX/YYY/ZZZ
+
+# メール通知設定
+SMTP_SERVER=smtp.example.com
+SMTP_PORT=587
+SMTP_USER=your-email@example.com
+SMTP_PASSWORD=your-password
+EMAIL_FROM=your-email@example.com
+EMAIL_TO=recipient@example.com
+
+# 基本設定 (dynaconfで上書き可能)
+# EMPLOYEE_NAME=社員名
+# TEMPLATE_PATH=templates/勤怠表雛形_2025年版.xlsx
+# INPUT_DIR=input
+# OUTPUT_DIR=output
+# LOG_DIR=logs 
